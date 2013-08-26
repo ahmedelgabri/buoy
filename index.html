@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Buoy - A simple vanilla JS micro-library.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="kraken.css" type="text/css">
+
+    <!-- HTML5 Shim for IE 6-8 -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section class="space-bottom bg-gray">
+	    <article class="container text-center">
+
+            <h1 class="text-taller no-space-bottom"><i class="icon-logo"></i> Buoy</h1>
+            <p class="text-tall text-muted">A simple vanilla JS micro-library.</p>
+
+	        <p><a class="btn btn-blue btn-jumbo" href="https://github.com/cferdinandi/buoy/archive/master.zip">Download Buoy</a></p>
+
+	        <p>
+	            <span class="text-small">
+	                <a href="https://github.com/cferdinandi/buoy"><i class="icon-github"></i> GitHub Project</a>
+	                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                <a class="scroll" data-speed="300" href="#more"><i class="icon-docs"></i> Getting Started</a>
+                </span>
+            </p>
+
+        </article>
+    </section>
+
+	<section class="space-bottom">
+	    <article class="container">
+
+
+	        <h1 class="text-center" id="more">Getting Started</h1>
+
+	        <p class="space-bottom-small">Buoy is a simple micro-library that makes working with vanilla JS just a little bit easier.</p>
+
+	        <ul>
+	            <li>Add, remove, toggle and check for classes.</li>
+	            <li>Get an object's sibling elements.</li>
+	        </ul>
+
+	        <hr>
+
+
+            <h1 class="text-center">How to use Buoy</h1>
+
+            <h2>1. Include Buoy on your site.</h2>
+
+            <pre><code class="language-markup">&lt;script src="buoy.js"&gt;&lt;/script&gt;</code></pre>
+
+            <p>Make sure Buoy is included before any scripts that make use of it.</p>
+
+
+            <h2>2. Use Buoy's functions in your scripts.</h2>
+            
+            <p class="space-bottom-small"><strong>hasClass</strong> - Check if an element has a class.</p>
+            <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
+if ( buoy.hasClass(turkey, 'sandwich') ) {
+    // Do stuff...
+}</code></pre>
+
+            <p class="space-bottom-small"><strong>addClass</strong> - Add a class to an element.</p>
+            <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
+buoy.addClass(turkey, 'sandwich');</code></pre>
+
+            <p class="space-bottom-small"><strong>removeClass</strong> - Remove a class from an element.</p>
+            <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
+buoy.removeClass(turkey, 'sandwich');</code></pre>
+
+            <p class="space-bottom-small"><strong>toggleClass</strong>  - Add or remove a class from an element.</p>
+            <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
+buoy.toggleClass(turkey, 'sandwich');</code></pre>
+
+            <p class="space-bottom-small"><strong>getSiblings</strong> - Get an array of siblings for an element.</p>
+            <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
+var turkeyFriends = getSiblings(turkey);
+[].forEach.call(turkeyFriends, function (friends) {
+    // Do stuff...
+});</code></pre>
+
+
+            <h2>3. Pat yourself on the back.</h2>
+
+            <p>Seriously, you're done. Nice work! Modify as needed.</p>
+
+            <hr>
+            
+
+            <h1 class="text-center">Browser Support</h1>
+
+            <p>Buoy works in all modern browsers, and IE 6 and above.</p>
+
+        </article>
+	</section>
+
+	<footer class="bg-gray">
+        <article class="container">
+
+            <p class="text-small text-muted text-center">Built by <a href="http://gomakethings.com">Chris Ferdinandi</a>. Free to use under the <a href="http://gomakethings.com/mit/">MIT License</a>.</p>
+
+            <p class="text-small text-muted text-center">TITLE is an add-on for <a href="http://cferdinandi.github.com/kraken/">Kraken</a>, a lightweight, mobile-first boilerplate for front-end web developers. It works great as a standalone product, too.</p>
+
+        </article>
+	</footer>
+
+
+    <!-- Javascript -->
+    <script type='text/javascript' src='js/kraken.js'></script>
+
+</body>
+</html>
