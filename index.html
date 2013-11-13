@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Buoy - A simple vanilla JS micro-library.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- stylesheets -->
     <link rel="stylesheet" href="kraken.css" type="text/css">
 
@@ -60,26 +60,26 @@
 
 
             <h2>2. Use Buoy's functions in your scripts.</h2>
-            
-            <p class="space-bottom-small"><strong>hasClass</strong> - Check if an element has a class.</p>
+
+            <p class="space-bottom-small"><strong><code>hasClass( element, class )</code></strong> - Check if an element has a class.</p>
             <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
 if ( buoy.hasClass(turkey, 'sandwich') ) {
     // Do stuff...
 }</code></pre>
 
-            <p class="space-bottom-small"><strong>addClass</strong> - Add a class to an element.</p>
+            <p class="space-bottom-small"><strong><code>addClass( element, class )</code></strong> - Add a class to an element.</p>
             <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
 buoy.addClass(turkey, 'sandwich');</code></pre>
 
-            <p class="space-bottom-small"><strong>removeClass</strong> - Remove a class from an element.</p>
+            <p class="space-bottom-small"><strong><code>removeClass( element, class )</code></strong> - Remove a class from an element.</p>
             <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
 buoy.removeClass(turkey, 'sandwich');</code></pre>
 
-            <p class="space-bottom-small"><strong>toggleClass</strong>  - Add or remove a class from an element.</p>
+            <p class="space-bottom-small"><strong><code>toggleClass( element, class )</code></strong>  - Add or remove a class from an element.</p>
             <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
 buoy.toggleClass(turkey, 'sandwich');</code></pre>
 
-            <p class="space-bottom-small"><strong>getSiblings</strong> - Get an array of siblings for an element.</p>
+            <p class="space-bottom-small"><strong><code>getSiblings( element )</code></strong> - Get an array of siblings for an element.</p>
             <pre><code class="language-javascript">var turkey = document.querySelector('#turkey');
 var turkeyFriends = buoy.getSiblings(turkey);
 [].forEach.call(turkeyFriends, function (friends) {
@@ -94,7 +94,7 @@ var turkeyFriends = buoy.getSiblings(turkey);
             <p>New to vanilla JS? Check out <a href="http://gomakethings.com/ditching-jquery-for-vanilla-js/">Ditching jQuery for Vanilla JS</a>.
 
             <hr>
-            
+
 
             <h1 class="text-center">Browser Support</h1>
 
